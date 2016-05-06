@@ -2,8 +2,8 @@ module Liquid
   class BlockBody
     FullToken = /\A#{TagStart}\s*(\w+)\s*(.*)?#{TagEnd}\z/om
     ContentOfVariable = /\A#{VariableStart}(.*)#{VariableEnd}\z/om
-    TAGSTART = "{L%".freeze
-    VARSTART = "{{L".freeze
+    TAGSTART = "[%".freeze
+    VARSTART = "[[".freeze
 
     attr_reader :nodelist
 
